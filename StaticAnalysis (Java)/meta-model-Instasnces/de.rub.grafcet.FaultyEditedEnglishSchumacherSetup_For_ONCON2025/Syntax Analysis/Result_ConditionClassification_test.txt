@@ -1,0 +1,2 @@
+Result of condition classification check for GRAFCET-File test:
+
