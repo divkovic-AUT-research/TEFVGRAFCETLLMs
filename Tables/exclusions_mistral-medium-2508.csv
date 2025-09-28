@@ -1,11 +1,11 @@
 Component;Var1;Var2;Reason
-Rotary Indexing Table;TableInPosition;NOT(TableRotating);Table cannot be in position and rotating simultaneously.
-Rotary Indexing Table;TableAutomatic;TableManual;Table cannot be in automatic and manual modes simultaneously.
+Rotary Indexing Table;NOT(TableRotating);TableInPosition;Table cannot be rotating and in position simultaneously.
+Rotary Indexing Table;TableAutomatic;TableManual;Table cannot be in automatic and manual mode at the same time.
 Station 1;LinearBack1;LinearFront1;Linear unit cannot be in rear and front positions simultaneously.
 Station 1;HandlingUp1;HandlingDown1;Gripper cannot be in upper and lower positions simultaneously.
 Station 1;ClampOpen1;ClampClosed1;Gripper clamp cannot be open and closed simultaneously.
 Station 1;PreSingulationUp1;PreSingulationDown1;Pre-singulation cannot be in upper and lower positions simultaneously.
-Station 1;SingulationDown1;SingulationUp1;Singulation cannot be in lower and upper positions simultaneously.
+Station 1;SingulationUp1;SingulationDown1;Singulation cannot be in upper and lower positions simultaneously.
 Station 2;PressingUp2;PressingDown2;Piston cannot be in upper and lower positions simultaneously.
 Station 3;ClampingUp3;ClampingDown3;Clamping cannot be in upper and lower positions simultaneously.
 Station 3;PlungerUp3;PlungerDown3;Plunger cannot be in upper and lower positions simultaneously.
