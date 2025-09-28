@@ -1,5 +1,5 @@
 Component;Var1;Var2;Reason
-Rotary Indexing Table;TableAutomatic;TableManual;Table cannot be in both automatic and manual modes simultaneously
+Rotary Indexing Table;TableAutomatic;TableManual;Table cannot be in both automatic and manual mode simultaneously
 Rotary Indexing Table;TableInPosition;NOT(TableRotating);Table cannot be both in position and rotating simultaneously
 Station 1;LinearBack1;LinearFront1;Linear unit cannot be in both rear and front positions simultaneously
 Station 1;HandlingUp1;HandlingDown1;Gripper cannot be in both upper and lower positions simultaneously
