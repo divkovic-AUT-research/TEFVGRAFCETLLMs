@@ -94,11 +94,10 @@ Important Rule: If a variable’s name is or contains "Emergency Stop", "Start",
 
 1. First, identify all unique system components from the table. Ensure that the determination of exclusions is only within a single system component.
 2. For each component, explicitly list all variables associated with it based on the table.
-3. Analyze carefully in multiple iterations (at least 20 times) the exclusions between the variables.
+3. Analyze carefully in multiple iterations (at least 3 times) the exclusions between the variables.
    Systematically compare every possible pair of variables within the component and make a determination based upon the semantic meaning in "Comment".
     Consider physical impossibilities, opposite or mutually exclusive states and any descriptions implying they cannot be true simultaneously. Double-check each pair for subtle exclusions.
-4. IMPORTANT: If a variable’s comment contains (0, \nwhen <action>), change the variable name to NOT(variable).
-    
+4. IMPORTANT: If a variable’s comment contains (0, \nwhen <action>), change the variable name to NOT(variable).  
 5. IMPORTANT: Return JSON only, matching this schema:
 
 {

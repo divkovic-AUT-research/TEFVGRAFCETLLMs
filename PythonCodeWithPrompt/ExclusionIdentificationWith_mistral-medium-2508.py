@@ -1,21 +1,28 @@
 import os
 import pandas as pd
-from openai import OpenAI
+from mistralai.client import MistralClient
+from mistralai.models.chat_completion import ChatMessage
+from dotenv import load_dotenv
 import csv
-import re
 import PDFTableToCSV
+import re
 
 import json
 from exclusions_validator import validate_exclusions, flatten_to_rows
 from pydantic import ValidationError
 
 # ----------------------------
-# 0) OpenAI client (set OPENAI_API_KEY in env)
+# 0.1) LLM Client
 # ----------------------------
-api_key = os.getenv("OPENAI_API_KEY")
+load_dotenv()
+api_key = os.getenv("Mistral_API_Key")
 if not api_key:
-    raise RuntimeError("Please set OPENAI_API_KEY environment variable.")
-client = OpenAI(api_key=api_key)
+    raise RuntimeError("Environment variable 'Mistral_API_Key' is not set. Please set it before running the script.")
+
+# ----------------------------
+# 0.2) Initialize Mistral API client
+# ----------------------------
+client = MistralClient(api_key=api_key)
 
 # ----------------------------
 # 1.) Load the extracted table (CSV saved from Camelot/pdfplumber)
@@ -119,6 +126,7 @@ Even if a component has no exclusions, include it with "exclusions": [].
 No markdown, explanations, or extra text. Provide only a short reason for each exclusion. Perform at least 20 internal verification iterations to ensure completeness and no missed exclusions."""
 )
 
+
 # ----------------------------
 # 3.2) Build the user_prompt that includes the extracted table
 # ----------------------------
@@ -135,24 +143,17 @@ TABLE (CSV/Markdown format):
 # 3.3) Call the model 
 # ----------------------------
 try:
-    response = client.chat.completions.create(
-    model="gpt-4o",
-    temperature=0,
-    max_completion_tokens=4000,  
-    messages=[
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
-)
-
-    # extract answer
+    response = client.chat(
+            model="mistral-medium-2508",
+            messages=[ChatMessage(role="user", content=system_prompt+user_prompt)],
+            temperature=0.0,
+            max_tokens=4000,
+        )
     answer = response.choices[0].message.content
-    print("=== Model output ===\n")
-    print(answer)
-
 except Exception as e:
-    print("Error calling model:", e)
-    answer = ""
+    print("Error calling Mistral API:", e)
+    answer
+
 #print(answer)
     
 # ---------------------------- 
@@ -195,7 +196,7 @@ for r in rows:
     print(r)
 
 
-with open("exclusions_gpt_4o.csv", "w", newline="", encoding="utf-8") as f:
+with open("exclusions_mistral-medium-2508.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f, delimiter=';')
     writer.writerow(["Component", "Var1", "Var2", "Reason"])
     writer.writerows(rows)
