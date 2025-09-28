@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grafcet:Grafcet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grafcet="http://www.example.org/grafcet" xmlns:terms="http://www.example.org/terms" name="qualityControl">
+  <variableDeclarationContainer>
+    <variableDeclarations name="ConveyorBelt" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="9002"/>
+    </variableDeclarations>
+    <variableDeclarations name="MotorProtectionSwitch">
+      <sort xsi:type="terms:Bool" id="9003"/>
+    </variableDeclarations>
+    <variableDeclarations name="Emergency Stop">
+      <sort xsi:type="terms:Bool" id="9004"/>
+    </variableDeclarations>
+    <variableDeclarations name="TableAutomatic">
+      <sort xsi:type="terms:Bool" id="9005"/>
+    </variableDeclarations>
+    <variableDeclarations name="TableManual">
+      <sort xsi:type="terms:Bool" id="9006"/>
+    </variableDeclarations>
+    <variableDeclarations name="Start">
+      <sort xsi:type="terms:Bool" id="9007"/>
+    </variableDeclarations>
+    <variableDeclarations name="Stop">
+      <sort xsi:type="terms:Bool" id="9008"/>
+    </variableDeclarations>
+    <variableDeclarations name="TableInPosition">
+      <sort xsi:type="terms:Bool" id="90011"/>
+    </variableDeclarations>
+    <variableDeclarations name="TableRotating">
+      <sort xsi:type="terms:Bool" id="90012"/>
+    </variableDeclarations>
+    <variableDeclarations name="StartTable" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90013"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station1_finished" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="9901"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station2_finished" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="9902"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station3_finished" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="9903"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station5_finished" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="9905"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station6_finished">
+      <sort xsi:type="terms:Bool" id="9906"/>
+    </variableDeclarations>
+    <variableDeclarations name="Station7_finished">
+      <sort xsi:type="terms:Bool" id="9907"/>
+    </variableDeclarations>
+    <variableDeclarations name="PartInSingulation1">
+      <sort xsi:type="terms:Bool" id="90017"/>
+    </variableDeclarations>
+    <variableDeclarations name="PartEntered1">
+      <sort xsi:type="terms:Bool" id="90018"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearFront1">
+      <sort xsi:type="terms:Bool" id="90019"/>
+    </variableDeclarations>
+    <variableDeclarations name="HandlingDown1">
+      <sort xsi:type="terms:Bool" id="90020"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampClosed1">
+      <sort xsi:type="terms:Bool" id="90021"/>
+    </variableDeclarations>
+    <variableDeclarations name="HandlingUp1">
+      <sort xsi:type="terms:Bool" id="90022"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearBack1">
+      <sort xsi:type="terms:Bool" id="90023"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampOpen1">
+      <sort xsi:type="terms:Bool" id="90024"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearUnit1" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90025"/>
+    </variableDeclarations>
+    <variableDeclarations name="Singulation1" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90026"/>
+    </variableDeclarations>
+    <variableDeclarations name="PreSingulation1" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90027"/>
+    </variableDeclarations>
+    <variableDeclarations name="Handling1" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90028"/>
+    </variableDeclarations>
+    <variableDeclarations name="Clamp1" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90029"/>
+    </variableDeclarations>
+    <variableDeclarations name="PressingUp2">
+      <sort xsi:type="terms:Bool" id="90030"/>
+    </variableDeclarations>
+    <variableDeclarations name="PressingDown2">
+      <sort xsi:type="terms:Bool" id="90031"/>
+    </variableDeclarations>
+    <variableDeclarations name="FaultAcknowledged">
+      <sort xsi:type="terms:Bool" id="90036"/>
+    </variableDeclarations>
+    <variableDeclarations name="Fault2" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="90032"/>
+    </variableDeclarations>
+    <variableDeclarations name="K2" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90033"/>
+    </variableDeclarations>
+    <variableDeclarations name="Pressing2" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90034"/>
+    </variableDeclarations>
+    <variableDeclarations name="2s/X202" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="90035"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampingUp3">
+      <sort xsi:type="terms:Bool" id="90037"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampingDown3">
+      <sort xsi:type="terms:Bool" id="90038"/>
+    </variableDeclarations>
+    <variableDeclarations name="TriggerFront3">
+      <sort xsi:type="terms:Bool" id="90039"/>
+    </variableDeclarations>
+    <variableDeclarations name="TriggerBack3">
+      <sort xsi:type="terms:Bool" id="90040"/>
+    </variableDeclarations>
+    <variableDeclarations name="PlungerUp3">
+      <sort xsi:type="terms:Bool" id="90044"/>
+    </variableDeclarations>
+    <variableDeclarations name="PlungerDown3">
+      <sort xsi:type="terms:Bool" id="90045"/>
+    </variableDeclarations>
+    <variableDeclarations name="Clamping3" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90041"/>
+    </variableDeclarations>
+    <variableDeclarations name="Trigger3" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90042"/>
+    </variableDeclarations>
+    <variableDeclarations name="Plunger3" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90046"/>
+    </variableDeclarations>
+    <variableDeclarations name="K3" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90043"/>
+    </variableDeclarations>
+    <variableDeclarations name="TriggerBack5">
+      <sort xsi:type="terms:Bool" id="90047"/>
+    </variableDeclarations>
+    <variableDeclarations name="TriggerFront5">
+      <sort xsi:type="terms:Bool" id="90048"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampingUp5">
+      <sort xsi:type="terms:Bool" id="90049"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampingDown5">
+      <sort xsi:type="terms:Bool" id="90050"/>
+    </variableDeclarations>
+    <variableDeclarations name="PlungerUp5">
+      <sort xsi:type="terms:Bool" id="90051"/>
+    </variableDeclarations>
+    <variableDeclarations name="PlungerDown5">
+      <sort xsi:type="terms:Bool" id="90052"/>
+    </variableDeclarations>
+    <variableDeclarations name="Control1">
+      <sort xsi:type="terms:Bool" id="90053"/>
+    </variableDeclarations>
+    <variableDeclarations name="Control2">
+      <sort xsi:type="terms:Bool" id="90054"/>
+    </variableDeclarations>
+    <variableDeclarations name="ControlError">
+      <sort xsi:type="terms:Bool" id="90062"/>
+    </variableDeclarations>
+    <variableDeclarations name="ContactingBack5">
+      <sort xsi:type="terms:Bool" id="90055"/>
+    </variableDeclarations>
+    <variableDeclarations name="ContactingFront5">
+      <sort xsi:type="terms:Bool" id="90056"/>
+    </variableDeclarations>
+    <variableDeclarations name="Clamping5" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90057"/>
+    </variableDeclarations>
+    <variableDeclarations name="Plunger5" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90058"/>
+    </variableDeclarations>
+    <variableDeclarations name="Trigger5" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90059"/>
+    </variableDeclarations>
+    <variableDeclarations name="Contacting5" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90060"/>
+    </variableDeclarations>
+    <variableDeclarations name="GOODPART" variableDeclarationType="internal">
+      <sort xsi:type="terms:Bool" id="90061"/>
+    </variableDeclarations>
+    <variableDeclarations name="K51" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90063"/>
+    </variableDeclarations>
+    <variableDeclarations name="K52" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90064"/>
+    </variableDeclarations>
+    <variableDeclarations name="StampBack6">
+      <sort xsi:type="terms:Bool" id="90065"/>
+    </variableDeclarations>
+    <variableDeclarations name="StampFront6">
+      <sort xsi:type="terms:Bool" id="90066"/>
+    </variableDeclarations>
+    <variableDeclarations name="Stamping6" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90067"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearFront7">
+      <sort xsi:type="terms:Bool" id="90068"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearBack7">
+      <sort xsi:type="terms:Bool" id="90069"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearInPos7">
+      <sort xsi:type="terms:Bool" id="90074"/>
+    </variableDeclarations>
+    <variableDeclarations name="HandlingDown7">
+      <sort xsi:type="terms:Bool" id="90070"/>
+    </variableDeclarations>
+    <variableDeclarations name="HandlingUp7">
+      <sort xsi:type="terms:Bool" id="90071"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampClosed7">
+      <sort xsi:type="terms:Bool" id="90072"/>
+    </variableDeclarations>
+    <variableDeclarations name="ClampOpen7">
+      <sort xsi:type="terms:Bool" id="90073"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearUnitForward7" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90075"/>
+    </variableDeclarations>
+    <variableDeclarations name="Handling7" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90076"/>
+    </variableDeclarations>
+    <variableDeclarations name="Clamp7" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90077"/>
+    </variableDeclarations>
+    <variableDeclarations name="LinearUnitBack7" variableDeclarationType="output">
+      <sort xsi:type="terms:Bool" id="90078"/>
+    </variableDeclarations>
+    <variableDeclarations name="K71" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90079"/>
+    </variableDeclarations>
+    <variableDeclarations name="K72" variableDeclarationType="internal">
+      <sort xsi:type="terms:Integer" id="90080"/>
+    </variableDeclarations>
+  </variableDeclarationContainer>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="GlobalGrafcet">
+    <steps xsi:type="grafcet:Step" id="1" initial="true"/>
+    <steps xsi:type="grafcet:Step" id="2"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="3" partialGrafcets="//@partialGrafcets.1"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="4"/>
+    <transitions id="1">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.0/@term/@output" id="11" input="//@partialGrafcets.0/@transitions.0/@term/@subterm.0/@output //@partialGrafcets.0/@transitions.0/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.0/@term/@subterm.0/@output" id="112" input="//@variableDeclarationContainer/@variableDeclarations.2/@sort">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="1122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+          <output xsi:type="terms:Bool" id="1121"/>
+        </subterm>
+        <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.0/@term/@subterm.1/@output" id="113" input="//@variableDeclarationContainer/@variableDeclarations.1/@sort">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.1/@sort" id="1132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.1"/>
+          <output xsi:type="terms:Bool" id="1131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="111"/>
+      </term>
+    </transitions>
+    <transitions id="2">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.1/@term/@output" id="21" input="//@variableDeclarationContainer/@variableDeclarations.5/@sort //@partialGrafcets.0/@transitions.1/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.5/@sort" id="212" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.5"/>
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.1/@term/@subterm.1/@output" id="213" input="//@variableDeclarationContainer/@variableDeclarations.3/@sort //@partialGrafcets.0/@transitions.1/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.3/@sort" id="2132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.3"/>
+          <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.1/@term/@subterm.1/@subterm.1/@output" id="2133" input="//@variableDeclarationContainer/@variableDeclarations.4/@sort">
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.4/@sort" id="21332" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.4"/>
+            <output xsi:type="terms:Bool" id="21331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="2131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="211"/>
+      </term>
+    </transitions>
+    <transitions id="3">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.2/@term/@output" id="31" input="//@variableDeclarationContainer/@variableDeclarations.5/@sort //@partialGrafcets.0/@transitions.2/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.5/@sort" id="212" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.5"/>
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.2/@term/@subterm.1/@output" id="313" input="//@partialGrafcets.0/@transitions.2/@term/@subterm.1/@subterm.0/@output //@variableDeclarationContainer/@variableDeclarations.4/@sort">
+          <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.2/@term/@subterm.1/@subterm.0/@output" id="3132" input="//@variableDeclarationContainer/@variableDeclarations.3/@sort">
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.3/@sort" id="31322" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.3"/>
+            <output xsi:type="terms:Bool" id="31321"/>
+          </subterm>
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.4/@sort" id="3133" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.4"/>
+          <output xsi:type="terms:Bool" id="3131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="311"/>
+      </term>
+    </transitions>
+    <transitions id="5">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.3/@term/@output" id="51" input="//@variableDeclarationContainer/@variableDeclarations.6/@sort //@partialGrafcets.0/@transitions.3/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.6/@sort" id="512" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.6"/>
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.3/@term/@subterm.1/@output" id="513" input="//@variableDeclarationContainer/@variableDeclarations.4/@sort //@partialGrafcets.0/@transitions.3/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.4/@sort" id="5132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.4"/>
+          <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.3/@term/@subterm.1/@subterm.1/@output" id="5133" input="//@variableDeclarationContainer/@variableDeclarations.2/@sort">
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="51332" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+            <output xsi:type="terms:Bool" id="51331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="5131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="511"/>
+      </term>
+    </transitions>
+    <transitions id="6">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+    </transitions>
+    <transitions id="4">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+    </transitions>
+    <transitions id="8">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="81" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+    </transitions>
+    <transitions id="7">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.7/@term/@output" id="71" input="//@variableDeclarationContainer/@variableDeclarations.6/@sort //@partialGrafcets.0/@transitions.7/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.6/@sort" id="712" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.6"/>
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.0/@transitions.7/@term/@subterm.1/@output" id="713" input="//@variableDeclarationContainer/@variableDeclarations.3/@sort //@partialGrafcets.0/@transitions.7/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.3/@sort" id="5132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.3"/>
+          <subterm xsi:type="terms:Not" sort="//@partialGrafcets.0/@transitions.7/@term/@subterm.1/@subterm.1/@output" id="7133" input="//@variableDeclarationContainer/@variableDeclarations.2/@sort">
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.2/@sort" id="71332" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.2"/>
+            <output xsi:type="terms:Bool" id="71331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="7131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="711"/>
+      </term>
+    </transitions>
+    <arcs source="//@partialGrafcets.0/@steps.0" target="//@partialGrafcets.0/@transitions.0"/>
+    <arcs source="//@partialGrafcets.0/@transitions.0" target="//@partialGrafcets.0/@steps.1"/>
+    <arcs source="//@partialGrafcets.0/@steps.1" target="//@partialGrafcets.0/@transitions.1"/>
+    <arcs source="//@partialGrafcets.0/@steps.1" target="//@partialGrafcets.0/@transitions.2"/>
+    <arcs source="//@partialGrafcets.0/@steps.1" target="//@partialGrafcets.0/@transitions.5"/>
+    <arcs source="//@partialGrafcets.0/@transitions.2" target="//@partialGrafcets.0/@steps.3"/>
+    <arcs source="//@partialGrafcets.0/@transitions.1" target="//@partialGrafcets.0/@steps.2"/>
+    <arcs source="//@partialGrafcets.0/@transitions.5" target="//@partialGrafcets.0/@steps.0"/>
+    <arcs source="//@partialGrafcets.0/@steps.3" target="//@partialGrafcets.0/@transitions.7"/>
+    <arcs source="//@partialGrafcets.0/@steps.3" target="//@partialGrafcets.0/@transitions.6"/>
+    <arcs source="//@partialGrafcets.0/@steps.2" target="//@partialGrafcets.0/@transitions.3"/>
+    <arcs source="//@partialGrafcets.0/@steps.2" target="//@partialGrafcets.0/@transitions.4"/>
+    <arcs source="//@partialGrafcets.0/@transitions.3" target="//@partialGrafcets.0/@steps.1"/>
+    <arcs source="//@partialGrafcets.0/@transitions.4" target="//@partialGrafcets.0/@steps.0"/>
+    <arcs source="//@partialGrafcets.0/@transitions.7" target="//@partialGrafcets.0/@steps.1"/>
+    <arcs source="//@partialGrafcets.0/@transitions.6" target="//@partialGrafcets.0/@steps.0"/>
+    <actionTypes xsi:type="grafcet:StoredAction" id="11">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.0/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.0"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.0/@actionTypes.0/@value/@output" id="12">
+        <output xsi:type="terms:Bool" id="121"/>
+      </value>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.0/@steps.0" actionType="//@partialGrafcets.0/@actionTypes.0"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G0" enclosingStep="//@partialGrafcets.0/@steps.2">
+    <steps xsi:type="grafcet:Step" id="10" activationLink="true"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="11" partialGrafcets="//@partialGrafcets.2"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="12" partialGrafcets="//@partialGrafcets.3"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="13" partialGrafcets="//@partialGrafcets.4"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="14" partialGrafcets="//@partialGrafcets.5"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="15" partialGrafcets="//@partialGrafcets.6"/>
+    <steps xsi:type="grafcet:EnclosingStep" id="16" partialGrafcets="//@partialGrafcets.7"/>
+    <steps xsi:type="grafcet:Step" id="17"/>
+    <steps xsi:type="grafcet:Step" id="18"/>
+    <steps xsi:type="grafcet:Step" id="19"/>
+    <steps xsi:type="grafcet:Step" id="20"/>
+    <steps xsi:type="grafcet:Step" id="21"/>
+    <steps xsi:type="grafcet:Step" id="22"/>
+    <transitions id="10">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.0/@term/@output" id="101" input="//@variableDeclarationContainer/@variableDeclarations.7/@sort //@variableDeclarationContainer/@variableDeclarations.8/@sort">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.7/@sort" id="1012" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.7"/>
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.8/@sort" id="1013" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.8"/>
+        <output xsi:type="terms:Bool" id="1011"/>
+      </term>
+    </transitions>
+    <transitions id="11">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.10/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.10"/>
+    </transitions>
+    <transitions id="12">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.11/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.11"/>
+    </transitions>
+    <transitions id="13">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.12/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.12"/>
+    </transitions>
+    <transitions id="14">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.13/@sort" id="51" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.13"/>
+    </transitions>
+    <transitions id="15">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.14/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.14"/>
+    </transitions>
+    <transitions id="16">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.15/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.15"/>
+    </transitions>
+    <transitions id="17">
+      <term xsi:type="terms:RisingEdge" sort="//@partialGrafcets.1/@transitions.7/@term/@output" id="91" input="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@output">
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@output" id="81" input="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.0/@output //@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@output">
+          <subterm xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.0/@output" id="812" input="//@variableDeclarationContainer/@variableDeclarations.10/@sort //@variableDeclarationContainer/@variableDeclarations.11/@sort">
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.10/@sort" id="8122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.10"/>
+            <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.11/@sort" id="8123" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.11"/>
+            <output xsi:type="terms:Bool" id="8121"/>
+          </subterm>
+          <subterm xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@output" id="813" input="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@subterm.0/@output //@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@subterm.1/@output">
+            <subterm xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@subterm.0/@output" id="8132" input="//@variableDeclarationContainer/@variableDeclarations.12/@sort //@variableDeclarationContainer/@variableDeclarations.13/@sort">
+              <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.12/@sort" id="81322" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.12"/>
+              <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.13/@sort" id="81323" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.13"/>
+              <output xsi:type="terms:Bool" id="81321"/>
+            </subterm>
+            <subterm xsi:type="terms:And" sort="//@partialGrafcets.1/@transitions.7/@term/@subterm.0/@subterm.1/@subterm.1/@output" id="8133" input="//@variableDeclarationContainer/@variableDeclarations.14/@sort //@variableDeclarationContainer/@variableDeclarations.15/@sort">
+              <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.14/@sort" id="81332" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.14"/>
+              <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.15/@sort" id="81333" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.15"/>
+              <output xsi:type="terms:Bool" id="81331"/>
+            </subterm>
+            <output xsi:type="terms:Bool" id="8131"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="811"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="911"/>
+      </term>
+    </transitions>
+    <synchronizations/>
+    <synchronizations/>
+    <arcs source="//@partialGrafcets.1/@steps.0" target="//@partialGrafcets.1/@transitions.0"/>
+    <arcs source="//@partialGrafcets.1/@transitions.0" target="//@partialGrafcets.1/@synchronizations.0"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.1"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.2"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.3"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.4"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.5"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.0" target="//@partialGrafcets.1/@steps.6"/>
+    <arcs source="//@partialGrafcets.1/@steps.1" target="//@partialGrafcets.1/@transitions.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.2" target="//@partialGrafcets.1/@transitions.2"/>
+    <arcs source="//@partialGrafcets.1/@steps.3" target="//@partialGrafcets.1/@transitions.3"/>
+    <arcs source="//@partialGrafcets.1/@steps.4" target="//@partialGrafcets.1/@transitions.4"/>
+    <arcs source="//@partialGrafcets.1/@steps.5" target="//@partialGrafcets.1/@transitions.5"/>
+    <arcs source="//@partialGrafcets.1/@steps.6" target="//@partialGrafcets.1/@transitions.6"/>
+    <arcs source="//@partialGrafcets.1/@transitions.6" target="//@partialGrafcets.1/@steps.12"/>
+    <arcs source="//@partialGrafcets.1/@transitions.5" target="//@partialGrafcets.1/@steps.11"/>
+    <arcs source="//@partialGrafcets.1/@transitions.4" target="//@partialGrafcets.1/@steps.10"/>
+    <arcs source="//@partialGrafcets.1/@transitions.3" target="//@partialGrafcets.1/@steps.9"/>
+    <arcs source="//@partialGrafcets.1/@transitions.2" target="//@partialGrafcets.1/@steps.8"/>
+    <arcs source="//@partialGrafcets.1/@transitions.1" target="//@partialGrafcets.1/@steps.7"/>
+    <arcs source="//@partialGrafcets.1/@steps.7" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.8" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.9" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.10" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.11" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@steps.12" target="//@partialGrafcets.1/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.1/@synchronizations.1" target="//@partialGrafcets.1/@transitions.7"/>
+    <arcs source="//@partialGrafcets.1/@transitions.7" target="//@partialGrafcets.1/@steps.0"/>
+    <actionTypes xsi:type="grafcet:StoredAction" id="101">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.0/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.0"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.1/@actionTypes.0/@value/@output" id="12" value="true">
+        <output xsi:type="terms:Bool" id="121"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="2">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.9/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.9"/>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.1/@steps.0" actionType="//@partialGrafcets.1/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.1/@steps.0" actionType="//@partialGrafcets.1/@actionTypes.1"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G1" enclosingStep="//@partialGrafcets.1/@steps.1">
+    <steps xsi:type="grafcet:Step" id="101"/>
+    <steps xsi:type="grafcet:Step" id="102" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="103"/>
+    <steps xsi:type="grafcet:Step" id="104"/>
+    <steps xsi:type="grafcet:Step" id="105"/>
+    <steps xsi:type="grafcet:Step" id="106"/>
+    <steps xsi:type="grafcet:Step" id="107"/>
+    <steps xsi:type="grafcet:Step" id="108"/>
+    <steps xsi:type="grafcet:Step" id="109"/>
+    <steps xsi:type="grafcet:Step" id="110"/>
+    <transitions id="101">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.16/@sort" id="1011" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.16"/>
+    </transitions>
+    <transitions id="102">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.17/@sort" id="1021" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.17"/>
+    </transitions>
+    <transitions id="103">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.18/@sort" id="1031" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.18"/>
+    </transitions>
+    <transitions id="104">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.19/@sort" id="1041" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.19"/>
+    </transitions>
+    <transitions id="105">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.20/@sort" id="1051" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.20"/>
+    </transitions>
+    <transitions id="106">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.21/@sort" id="1061" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.21"/>
+    </transitions>
+    <transitions id="107">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.22/@sort" id="1071" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.22"/>
+    </transitions>
+    <transitions id="108">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.19/@sort" id="1081" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.19"/>
+    </transitions>
+    <transitions id="109">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.23/@sort" id="1091" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.23"/>
+    </transitions>
+    <transitions id="110">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.21/@sort" id="1101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.21"/>
+    </transitions>
+    <arcs source="//@partialGrafcets.2/@steps.0" target="//@partialGrafcets.2/@transitions.0"/>
+    <arcs source="//@partialGrafcets.2/@transitions.0" target="//@partialGrafcets.2/@steps.1"/>
+    <arcs source="//@partialGrafcets.2/@steps.1" target="//@partialGrafcets.2/@transitions.1"/>
+    <arcs source="//@partialGrafcets.2/@transitions.1" target="//@partialGrafcets.2/@steps.2"/>
+    <arcs source="//@partialGrafcets.2/@steps.2" target="//@partialGrafcets.2/@transitions.2"/>
+    <arcs source="//@partialGrafcets.2/@transitions.2" target="//@partialGrafcets.2/@steps.3"/>
+    <arcs source="//@partialGrafcets.2/@steps.3" target="//@partialGrafcets.2/@transitions.3"/>
+    <arcs source="//@partialGrafcets.2/@transitions.3" target="//@partialGrafcets.2/@steps.4"/>
+    <arcs source="//@partialGrafcets.2/@steps.4" target="//@partialGrafcets.2/@transitions.4"/>
+    <arcs source="//@partialGrafcets.2/@transitions.4" target="//@partialGrafcets.2/@steps.5"/>
+    <arcs source="//@partialGrafcets.2/@steps.5" target="//@partialGrafcets.2/@transitions.5"/>
+    <arcs source="//@partialGrafcets.2/@transitions.5" target="//@partialGrafcets.2/@steps.6"/>
+    <arcs source="//@partialGrafcets.2/@steps.6" target="//@partialGrafcets.2/@transitions.6"/>
+    <arcs source="//@partialGrafcets.2/@transitions.6" target="//@partialGrafcets.2/@steps.7"/>
+    <arcs source="//@partialGrafcets.2/@steps.7" target="//@partialGrafcets.2/@transitions.7"/>
+    <arcs source="//@partialGrafcets.2/@transitions.7" target="//@partialGrafcets.2/@steps.8"/>
+    <arcs source="//@partialGrafcets.2/@steps.8" target="//@partialGrafcets.2/@transitions.8"/>
+    <arcs source="//@partialGrafcets.2/@transitions.8" target="//@partialGrafcets.2/@steps.9"/>
+    <arcs source="//@partialGrafcets.2/@steps.9" target="//@partialGrafcets.2/@transitions.9"/>
+    <arcs source="//@partialGrafcets.2/@transitions.9" target="//@partialGrafcets.2/@steps.0"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="1011">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.10/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.10"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1012">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.24/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.24"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.1/@value/@output" id="22" value="true">
+        <output xsi:type="terms:Bool" id="221"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1013">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.25/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.25"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.2/@value/@output" id="32" value="true">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1014">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.26/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.26"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.3/@value/@output" id="42" value="true">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1021">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.25/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.25"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.4/@value/@output" id="32">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1022">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.26/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.26"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.5/@value/@output" id="42">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1032">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.26/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.26"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.6/@value/@output" id="42" value="true">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1031">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.25/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.25"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.7/@value/@output" id="32" value="true">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1061">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.27/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.27"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.8/@value/@output" id="92">
+        <output xsi:type="terms:Bool" id="921"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1041">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.27/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.27"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.9/@value/@output" id="92" value="true">
+        <output xsi:type="terms:Bool" id="921"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1081">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.27/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.27"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.10/@value/@output" id="92" value="true">
+        <output xsi:type="terms:Bool" id="921"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1101">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.27/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.27"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.11/@value/@output" id="92">
+        <output xsi:type="terms:Bool" id="921"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1051">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.28/@sort" id="131" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.28"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.12/@value/@output" id="132" value="true">
+        <output xsi:type="terms:Bool" id="1321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1091">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.28/@sort" id="131" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.28"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.13/@value/@output" id="132">
+        <output xsi:type="terms:Bool" id="1321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="1071">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.24/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.24"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.2/@actionTypes.14/@value/@output" id="22" value="true">
+        <output xsi:type="terms:Bool" id="221"/>
+      </value>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.2/@steps.0" actionType="//@partialGrafcets.2/@actionTypes.1"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.0" actionType="//@partialGrafcets.2/@actionTypes.3"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.0" actionType="//@partialGrafcets.2/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.0" actionType="//@partialGrafcets.2/@actionTypes.2"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.1" actionType="//@partialGrafcets.2/@actionTypes.4"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.1" actionType="//@partialGrafcets.2/@actionTypes.5"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.2" actionType="//@partialGrafcets.2/@actionTypes.7"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.2" actionType="//@partialGrafcets.2/@actionTypes.6"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.3" actionType="//@partialGrafcets.2/@actionTypes.9"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.4" actionType="//@partialGrafcets.2/@actionTypes.12"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.5" actionType="//@partialGrafcets.2/@actionTypes.8"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.6" actionType="//@partialGrafcets.2/@actionTypes.14"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.7" actionType="//@partialGrafcets.2/@actionTypes.10"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.8" actionType="//@partialGrafcets.2/@actionTypes.13"/>
+    <actionLinks step="//@partialGrafcets.2/@steps.9" actionType="//@partialGrafcets.2/@actionTypes.11"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G2" enclosingStep="//@partialGrafcets.1/@steps.2">
+    <steps xsi:type="grafcet:Step" id="201"/>
+    <steps xsi:type="grafcet:Step" id="202" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="203"/>
+    <steps xsi:type="grafcet:Step" id="204"/>
+    <transitions id="201">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.29/@sort" id="2011" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.29"/>
+    </transitions>
+    <transitions id="202">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.3/@transitions.1/@term/@output" id="2021" input="//@partialGrafcets.3/@transitions.1/@term/@subterm.0/@output //@variableDeclarationContainer/@variableDeclarations.35/@sort">
+        <subterm xsi:type="terms:Not" sort="//@partialGrafcets.3/@transitions.1/@term/@subterm.0/@output" id="20212" input="//@variableDeclarationContainer/@variableDeclarations.29/@sort">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.29/@sort" id="202122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.29"/>
+          <output xsi:type="terms:Bool" id="202121"/>
+        </subterm>
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.35/@sort" id="20213" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.35"/>
+        <output xsi:type="terms:Bool" id="20211"/>
+      </term>
+    </transitions>
+    <transitions id="206">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.3/@transitions.2/@term/@output" id="2061" input="//@variableDeclarationContainer/@variableDeclarations.30/@sort //@variableDeclarationContainer/@variableDeclarations.35/@sort">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.30/@sort" id="20612" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.30"/>
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.35/@sort" id="20613" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.35"/>
+        <output xsi:type="terms:Bool" id="20611"/>
+      </term>
+    </transitions>
+    <transitions id="203">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.3/@transitions.3/@term/@output" id="2041" input="//@variableDeclarationContainer/@variableDeclarations.29/@sort //@partialGrafcets.3/@transitions.3/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.29/@sort" id="20412" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.29"/>
+        <subterm xsi:type="terms:LessThan" sort="//@partialGrafcets.3/@transitions.3/@term/@subterm.1/@output" id="20413" input="//@variableDeclarationContainer/@variableDeclarations.33/@sort //@partialGrafcets.3/@transitions.3/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.33/@sort" id="204132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.33"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.3/@transitions.3/@term/@subterm.1/@subterm.1/@output" id="204133" value="3">
+            <output xsi:type="terms:Integer" id="2041331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="204131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="20411"/>
+      </term>
+    </transitions>
+    <transitions id="204">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.3/@transitions.4/@term/@output" id="2041" input="//@variableDeclarationContainer/@variableDeclarations.29/@sort //@partialGrafcets.3/@transitions.4/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.29/@sort" id="20412" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.29"/>
+        <subterm xsi:type="terms:Equality" sort="//@partialGrafcets.3/@transitions.4/@term/@subterm.1/@output" id="20413" input="//@variableDeclarationContainer/@variableDeclarations.33/@sort //@partialGrafcets.3/@transitions.4/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.33/@sort" id="204132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.33"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.3/@transitions.4/@term/@subterm.1/@subterm.1/@output" id="204133" value="3">
+            <output xsi:type="terms:Integer" id="2041331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="204131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="20411"/>
+      </term>
+    </transitions>
+    <transitions id="205">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.31/@sort" id="2051" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.31"/>
+    </transitions>
+    <arcs source="//@partialGrafcets.3/@steps.0" target="//@partialGrafcets.3/@transitions.0"/>
+    <arcs source="//@partialGrafcets.3/@transitions.0" target="//@partialGrafcets.3/@steps.1"/>
+    <arcs source="//@partialGrafcets.3/@steps.1" target="//@partialGrafcets.3/@transitions.1"/>
+    <arcs source="//@partialGrafcets.3/@transitions.1" target="//@partialGrafcets.3/@steps.2"/>
+    <arcs source="//@partialGrafcets.3/@steps.2" target="//@partialGrafcets.3/@transitions.3"/>
+    <arcs source="//@partialGrafcets.3/@steps.1" target="//@partialGrafcets.3/@transitions.2"/>
+    <arcs source="//@partialGrafcets.3/@steps.2" target="//@partialGrafcets.3/@transitions.4"/>
+    <arcs source="//@partialGrafcets.3/@transitions.4" target="//@partialGrafcets.3/@steps.3"/>
+    <arcs source="//@partialGrafcets.3/@steps.3" target="//@partialGrafcets.3/@transitions.5"/>
+    <arcs source="//@partialGrafcets.3/@transitions.5" target="//@partialGrafcets.3/@steps.0"/>
+    <arcs source="//@partialGrafcets.3/@transitions.2" target="//@partialGrafcets.3/@steps.0"/>
+    <arcs source="//@partialGrafcets.3/@transitions.3" target="//@partialGrafcets.3/@steps.1"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="201">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.11/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.11"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="202">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.33/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.33"/>
+      <value xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.3/@actionTypes.1/@value/@output" id="22">
+        <output xsi:type="terms:Integer" id="221"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="203">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.34/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.34"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="204">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.33/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.33"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.3/@actionTypes.3/@value/@output" id="42" input="//@variableDeclarationContainer/@variableDeclarations.33/@sort //@partialGrafcets.3/@actionTypes.3/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.33/@sort" id="422" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.33"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.3/@actionTypes.3/@value/@subterm.1/@output" id="423" value="1">
+          <output xsi:type="terms:Integer" id="4231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="205">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.32/@sort" id="51" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.32"/>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.3/@steps.1" actionType="//@partialGrafcets.3/@actionTypes.2"/>
+    <actionLinks step="//@partialGrafcets.3/@steps.0" actionType="//@partialGrafcets.3/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.3/@steps.0" actionType="//@partialGrafcets.3/@actionTypes.1"/>
+    <actionLinks step="//@partialGrafcets.3/@steps.2" actionType="//@partialGrafcets.3/@actionTypes.3"/>
+    <actionLinks step="//@partialGrafcets.3/@steps.3" actionType="//@partialGrafcets.3/@actionTypes.4"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G3" enclosingStep="//@partialGrafcets.1/@steps.3">
+    <steps xsi:type="grafcet:Step" id="301"/>
+    <steps xsi:type="grafcet:Step" id="302" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="303"/>
+    <steps xsi:type="grafcet:Step" id="304"/>
+    <steps xsi:type="grafcet:Step" id="305"/>
+    <steps xsi:type="grafcet:Step" id="306"/>
+    <transitions id="301">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.36/@sort" id="3011" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.36"/>
+    </transitions>
+    <transitions id="302">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.37/@sort" id="3021" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.37"/>
+    </transitions>
+    <transitions id="303">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.38/@sort" id="3031" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.38"/>
+    </transitions>
+    <transitions id="304">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.41/@sort" id="3041" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.41"/>
+    </transitions>
+    <transitions id="305">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.40/@sort" id="3051" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.40"/>
+    </transitions>
+    <transitions id="306">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.4/@transitions.5/@term/@output" id="3061" input="//@variableDeclarationContainer/@variableDeclarations.39/@sort //@partialGrafcets.4/@transitions.5/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.39/@sort" id="30612" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.39"/>
+        <subterm xsi:type="terms:LessThan" sort="//@partialGrafcets.4/@transitions.5/@term/@subterm.1/@output" id="30613" input="//@variableDeclarationContainer/@variableDeclarations.45/@sort //@partialGrafcets.4/@transitions.5/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.45/@sort" id="306132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.45"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.4/@transitions.5/@term/@subterm.1/@subterm.1/@output" id="306133" value="5">
+            <output xsi:type="terms:Integer" id="3061331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="306131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="30611"/>
+      </term>
+    </transitions>
+    <transitions id="307">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.4/@transitions.6/@term/@output" id="3071" input="//@variableDeclarationContainer/@variableDeclarations.39/@sort //@partialGrafcets.4/@transitions.6/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.39/@sort" id="30712" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.39"/>
+        <subterm xsi:type="terms:Equality" sort="//@partialGrafcets.4/@transitions.6/@term/@subterm.1/@output" id="30713" input="//@variableDeclarationContainer/@variableDeclarations.45/@sort //@partialGrafcets.4/@transitions.6/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.45/@sort" id="307132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.45"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.4/@transitions.6/@term/@subterm.1/@subterm.1/@output" id="307133" value="5">
+            <output xsi:type="terms:Integer" id="3071331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="307131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="30711"/>
+      </term>
+    </transitions>
+    <arcs source="//@partialGrafcets.4/@steps.0" target="//@partialGrafcets.4/@transitions.0"/>
+    <arcs source="//@partialGrafcets.4/@transitions.0" target="//@partialGrafcets.4/@steps.1"/>
+    <arcs source="//@partialGrafcets.4/@steps.1" target="//@partialGrafcets.4/@transitions.1"/>
+    <arcs source="//@partialGrafcets.4/@transitions.1" target="//@partialGrafcets.4/@steps.2"/>
+    <arcs source="//@partialGrafcets.4/@steps.2" target="//@partialGrafcets.4/@transitions.2"/>
+    <arcs source="//@partialGrafcets.4/@transitions.2" target="//@partialGrafcets.4/@steps.3"/>
+    <arcs source="//@partialGrafcets.4/@steps.3" target="//@partialGrafcets.4/@transitions.3"/>
+    <arcs source="//@partialGrafcets.4/@transitions.3" target="//@partialGrafcets.4/@steps.4"/>
+    <arcs source="//@partialGrafcets.4/@steps.4" target="//@partialGrafcets.4/@transitions.4"/>
+    <arcs source="//@partialGrafcets.4/@transitions.4" target="//@partialGrafcets.4/@steps.5"/>
+    <arcs source="//@partialGrafcets.4/@steps.5" target="//@partialGrafcets.4/@transitions.5"/>
+    <arcs source="//@partialGrafcets.4/@transitions.5" target="//@partialGrafcets.4/@steps.2"/>
+    <arcs source="//@partialGrafcets.4/@steps.5" target="//@partialGrafcets.4/@transitions.6"/>
+    <arcs source="//@partialGrafcets.4/@transitions.6" target="//@partialGrafcets.4/@steps.0"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="301">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.12/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.12"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="302">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.42/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.42"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.4/@actionTypes.1/@value/@output" id="22">
+        <output xsi:type="terms:Bool" id="221"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="303">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.45/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.45"/>
+      <value xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.4/@actionTypes.2/@value/@output" id="32">
+        <output xsi:type="terms:Integer" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="304">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.42/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.42"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.4/@actionTypes.3/@value/@output" id="42" value="true">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="305">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.43/@sort" id="51" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.43"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.4/@actionTypes.4/@value/@output" id="52" value="true">
+        <output xsi:type="terms:Bool" id="521"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="306">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.44/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.44"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="307" storedActionType="deactivation">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.43/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.43"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.4/@actionTypes.6/@value/@output" id="72">
+        <output xsi:type="terms:Bool" id="721"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="308">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.45/@sort" id="81" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.45"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.4/@actionTypes.7/@value/@output" id="82" input="//@variableDeclarationContainer/@variableDeclarations.45/@sort //@partialGrafcets.4/@actionTypes.7/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.45/@sort" id="822" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.45"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.4/@actionTypes.7/@value/@subterm.1/@output" id="823" value="3">
+          <output xsi:type="terms:Integer" id="8231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="821"/>
+      </value>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.4/@steps.0" actionType="//@partialGrafcets.4/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.0" actionType="//@partialGrafcets.4/@actionTypes.1"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.0" actionType="//@partialGrafcets.4/@actionTypes.2"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.1" actionType="//@partialGrafcets.4/@actionTypes.3"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.2" actionType="//@partialGrafcets.4/@actionTypes.4"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.3" actionType="//@partialGrafcets.4/@actionTypes.5"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.4" actionType="//@partialGrafcets.4/@actionTypes.6"/>
+    <actionLinks step="//@partialGrafcets.4/@steps.5" actionType="//@partialGrafcets.4/@actionTypes.7"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G5" enclosingStep="//@partialGrafcets.1/@steps.4">
+    <steps xsi:type="grafcet:Step" id="501"/>
+    <steps xsi:type="grafcet:Step" id="502" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="503"/>
+    <steps xsi:type="grafcet:Step" id="504"/>
+    <steps xsi:type="grafcet:Step" id="505"/>
+    <steps xsi:type="grafcet:Step" id="506"/>
+    <steps xsi:type="grafcet:Step" id="507"/>
+    <steps xsi:type="grafcet:Step" id="508"/>
+    <steps xsi:type="grafcet:Step" id="509"/>
+    <steps xsi:type="grafcet:Step" id="510"/>
+    <steps xsi:type="grafcet:Step" id="511"/>
+    <steps xsi:type="grafcet:Step" id="512"/>
+    <steps xsi:type="grafcet:Step" id="513"/>
+    <transitions id="501">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.48/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.48"/>
+    </transitions>
+    <transitions id="502">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.49/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.49"/>
+    </transitions>
+    <transitions id="503">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.47/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.47"/>
+    </transitions>
+    <transitions id="504">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.51/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.51"/>
+    </transitions>
+    <transitions id="505">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.50/@sort" id="51" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.50"/>
+    </transitions>
+    <transitions id="506">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.46/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.46"/>
+    </transitions>
+    <transitions id="507">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.5/@transitions.6/@term/@output" id="71" input="//@variableDeclarationContainer/@variableDeclarations.56/@sort //@partialGrafcets.5/@transitions.6/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.56/@sort" id="712" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.56"/>
+        <subterm xsi:type="terms:And" sort="//@partialGrafcets.5/@transitions.6/@term/@subterm.1/@output" id="713" input="//@variableDeclarationContainer/@variableDeclarations.52/@sort //@variableDeclarationContainer/@variableDeclarations.53/@sort">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.52/@sort" id="7132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.52"/>
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.53/@sort" id="7133" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.53"/>
+          <output xsi:type="terms:Bool" id="7131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="711"/>
+      </term>
+    </transitions>
+    <transitions id="508">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.55/@sort" id="81" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.55"/>
+    </transitions>
+    <transitions id="509">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.54/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.54"/>
+    </transitions>
+    <transitions id="510">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.55/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.55"/>
+    </transitions>
+    <transitions id="511">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.5/@transitions.10/@term/@output" id="111" input="//@partialGrafcets.5/@transitions.10/@term/@subterm.0/@output //@partialGrafcets.5/@transitions.10/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:LessThan" sort="//@partialGrafcets.5/@transitions.10/@term/@subterm.0/@output" id="1112" input="//@variableDeclarationContainer/@variableDeclarations.62/@sort //@partialGrafcets.5/@transitions.10/@term/@subterm.0/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="11122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.10/@term/@subterm.0/@subterm.1/@output" id="11123" value="5">
+            <output xsi:type="terms:Integer" id="111231"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="11121"/>
+        </subterm>
+        <subterm xsi:type="terms:LessThan" sort="//@partialGrafcets.5/@transitions.10/@term/@subterm.1/@output" id="1113" input="//@variableDeclarationContainer/@variableDeclarations.63/@sort //@partialGrafcets.5/@transitions.10/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="11132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.10/@term/@subterm.1/@subterm.1/@output" id="11133" value="5">
+            <output xsi:type="terms:Integer" id="111331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="11131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="1111"/>
+      </term>
+    </transitions>
+    <transitions id="512">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.5/@transitions.11/@term/@output" id="121" input="//@partialGrafcets.5/@transitions.11/@term/@subterm.0/@output //@partialGrafcets.5/@transitions.11/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Equality" sort="//@partialGrafcets.5/@transitions.11/@term/@subterm.0/@output" id="1212" input="//@variableDeclarationContainer/@variableDeclarations.62/@sort //@partialGrafcets.5/@transitions.11/@term/@subterm.0/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="12122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.11/@term/@subterm.0/@subterm.1/@output" id="12123" value="5">
+            <output xsi:type="terms:Integer" id="121231"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="12121"/>
+        </subterm>
+        <subterm xsi:type="terms:Equality" sort="//@partialGrafcets.5/@transitions.11/@term/@subterm.1/@output" id="1213" input="//@variableDeclarationContainer/@variableDeclarations.63/@sort //@partialGrafcets.5/@transitions.11/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="12132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.11/@term/@subterm.1/@subterm.1/@output" id="12133" value="5">
+            <output xsi:type="terms:Integer" id="121331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="12131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="1211"/>
+      </term>
+    </transitions>
+    <transitions id="513">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.5/@transitions.12/@term/@output" id="131" input="//@partialGrafcets.5/@transitions.12/@term/@subterm.0/@output //@partialGrafcets.5/@transitions.12/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Equality" sort="//@partialGrafcets.5/@transitions.12/@term/@subterm.0/@output" id="1312" input="//@variableDeclarationContainer/@variableDeclarations.62/@sort //@partialGrafcets.5/@transitions.12/@term/@subterm.0/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="13122" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.12/@term/@subterm.0/@subterm.1/@output" id="13123" value="5">
+            <output xsi:type="terms:Integer" id="131231"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="13121"/>
+        </subterm>
+        <subterm xsi:type="terms:LessThan" sort="//@partialGrafcets.5/@transitions.12/@term/@subterm.1/@output" id="1313" input="//@variableDeclarationContainer/@variableDeclarations.63/@sort //@partialGrafcets.5/@transitions.12/@term/@subterm.1/@subterm.1/@output">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="13132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+          <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@transitions.12/@term/@subterm.1/@subterm.1/@output" id="13133" value="5">
+            <output xsi:type="terms:Integer" id="131331"/>
+          </subterm>
+          <output xsi:type="terms:Bool" id="13131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="1311"/>
+      </term>
+    </transitions>
+    <transitions id="514">
+      <term xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@transitions.13/@term/@output" id="141" value="true">
+        <output xsi:type="terms:Bool" id="1411"/>
+      </term>
+    </transitions>
+    <transitions id="515">
+      <term xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@transitions.14/@term/@output" id="151" value="true">
+        <output xsi:type="terms:Bool" id="1511"/>
+      </term>
+    </transitions>
+    <synchronizations/>
+    <synchronizations/>
+    <arcs source="//@partialGrafcets.5/@steps.0" target="//@partialGrafcets.5/@transitions.0"/>
+    <arcs source="//@partialGrafcets.5/@transitions.0" target="//@partialGrafcets.5/@steps.1"/>
+    <arcs source="//@partialGrafcets.5/@steps.1" target="//@partialGrafcets.5/@transitions.1"/>
+    <arcs source="//@partialGrafcets.5/@transitions.1" target="//@partialGrafcets.5/@synchronizations.0"/>
+    <arcs source="//@partialGrafcets.5/@synchronizations.0" target="//@partialGrafcets.5/@steps.2"/>
+    <arcs source="//@partialGrafcets.5/@synchronizations.0" target="//@partialGrafcets.5/@steps.7"/>
+    <arcs source="//@partialGrafcets.5/@steps.2" target="//@partialGrafcets.5/@transitions.2"/>
+    <arcs source="//@partialGrafcets.5/@transitions.2" target="//@partialGrafcets.5/@steps.3"/>
+    <arcs source="//@partialGrafcets.5/@steps.3" target="//@partialGrafcets.5/@transitions.3"/>
+    <arcs source="//@partialGrafcets.5/@transitions.3" target="//@partialGrafcets.5/@steps.4"/>
+    <arcs source="//@partialGrafcets.5/@steps.4" target="//@partialGrafcets.5/@transitions.4"/>
+    <arcs source="//@partialGrafcets.5/@transitions.4" target="//@partialGrafcets.5/@steps.5"/>
+    <arcs source="//@partialGrafcets.5/@steps.5" target="//@partialGrafcets.5/@transitions.5"/>
+    <arcs source="//@partialGrafcets.5/@transitions.5" target="//@partialGrafcets.5/@steps.6"/>
+    <arcs source="//@partialGrafcets.5/@steps.6" target="//@partialGrafcets.5/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.5/@steps.7" target="//@partialGrafcets.5/@transitions.6"/>
+    <arcs source="//@partialGrafcets.5/@steps.7" target="//@partialGrafcets.5/@transitions.8"/>
+    <arcs source="//@partialGrafcets.5/@transitions.6" target="//@partialGrafcets.5/@steps.8"/>
+    <arcs source="//@partialGrafcets.5/@transitions.8" target="//@partialGrafcets.5/@steps.10"/>
+    <arcs source="//@partialGrafcets.5/@steps.8" target="//@partialGrafcets.5/@transitions.7"/>
+    <arcs source="//@partialGrafcets.5/@steps.10" target="//@partialGrafcets.5/@transitions.9"/>
+    <arcs source="//@partialGrafcets.5/@transitions.7" target="//@partialGrafcets.5/@steps.9"/>
+    <arcs source="//@partialGrafcets.5/@transitions.9" target="//@partialGrafcets.5/@steps.9"/>
+    <arcs source="//@partialGrafcets.5/@steps.9" target="//@partialGrafcets.5/@synchronizations.1"/>
+    <arcs source="//@partialGrafcets.5/@synchronizations.1" target="//@partialGrafcets.5/@transitions.10"/>
+    <arcs source="//@partialGrafcets.5/@synchronizations.1" target="//@partialGrafcets.5/@transitions.11"/>
+    <arcs source="//@partialGrafcets.5/@synchronizations.1" target="//@partialGrafcets.5/@transitions.12"/>
+    <arcs source="//@partialGrafcets.5/@transitions.10" target="//@partialGrafcets.5/@steps.1"/>
+    <arcs source="//@partialGrafcets.5/@transitions.11" target="//@partialGrafcets.5/@steps.11"/>
+    <arcs source="//@partialGrafcets.5/@steps.11" target="//@partialGrafcets.5/@transitions.13"/>
+    <arcs source="//@partialGrafcets.5/@transitions.13" target="//@partialGrafcets.5/@steps.0"/>
+    <arcs source="//@partialGrafcets.5/@transitions.12" target="//@partialGrafcets.5/@steps.12"/>
+    <arcs source="//@partialGrafcets.5/@steps.12" target="//@partialGrafcets.5/@transitions.14"/>
+    <arcs source="//@partialGrafcets.5/@transitions.14" target="//@partialGrafcets.5/@steps.0"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="51">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.13/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.13"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="52">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+      <value xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@actionTypes.1/@value/@output" id="22">
+        <output xsi:type="terms:Integer" id="221"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="53">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+      <value xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@actionTypes.2/@value/@output" id="32">
+        <output xsi:type="terms:Integer" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="54">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.57/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.57"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.3/@value/@output" id="42">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="55">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.57/@sort" id="41" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.57"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.4/@value/@output" id="42" value="true">
+        <output xsi:type="terms:Bool" id="421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="56">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.59/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.59"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.5/@value/@output" id="62" value="true">
+        <output xsi:type="terms:Bool" id="621"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="57" storedActionType="deactivation">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.59/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.59"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.6/@value/@output" id="62">
+        <output xsi:type="terms:Bool" id="621"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="58">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.58/@sort" id="81" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.58"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="59">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="91" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.5/@actionTypes.8/@value/@output" id="92" input="//@variableDeclarationContainer/@variableDeclarations.62/@sort //@partialGrafcets.5/@actionTypes.8/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.62/@sort" id="922" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.62"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@actionTypes.8/@value/@subterm.1/@output" id="923" value="1">
+          <output xsi:type="terms:Integer" id="9231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="921"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="510">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.60/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.60"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.9/@value/@output" id="102" value="true">
+        <output xsi:type="terms:Bool" id="1021"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="511">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.60/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.60"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.10/@value/@output" id="102">
+        <output xsi:type="terms:Bool" id="1021"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="512">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.60/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.60"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.11/@value/@output" id="102">
+        <output xsi:type="terms:Bool" id="1021"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="513">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="131" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.5/@actionTypes.12/@value/@output" id="132" input="//@variableDeclarationContainer/@variableDeclarations.63/@sort //@partialGrafcets.5/@actionTypes.12/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.63/@sort" id="1322" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.63"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.5/@actionTypes.12/@value/@subterm.1/@output" id="1323" value="1">
+          <output xsi:type="terms:Integer" id="13231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="1321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="514">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.61/@sort" id="141" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.61"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.13/@value/@output" id="142" value="true">
+        <output xsi:type="terms:Bool" id="1421"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="515">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.61/@sort" id="141" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.61"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.5/@actionTypes.14/@value/@output" id="142">
+        <output xsi:type="terms:Bool" id="1421"/>
+      </value>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.5/@steps.0" actionType="//@partialGrafcets.5/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.0" actionType="//@partialGrafcets.5/@actionTypes.1"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.0" actionType="//@partialGrafcets.5/@actionTypes.2"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.0" actionType="//@partialGrafcets.5/@actionTypes.3"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.1" actionType="//@partialGrafcets.5/@actionTypes.4"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.2" actionType="//@partialGrafcets.5/@actionTypes.5"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.7" actionType="//@partialGrafcets.5/@actionTypes.9"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.3" actionType="//@partialGrafcets.5/@actionTypes.7"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.4" actionType="//@partialGrafcets.5/@actionTypes.6"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.5" actionType="//@partialGrafcets.5/@actionTypes.8"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.11" actionType="//@partialGrafcets.5/@actionTypes.13"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.12" actionType="//@partialGrafcets.5/@actionTypes.14"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.8" actionType="//@partialGrafcets.5/@actionTypes.10"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.8" actionType="//@partialGrafcets.5/@actionTypes.12"/>
+    <actionLinks step="//@partialGrafcets.5/@steps.10" actionType="//@partialGrafcets.5/@actionTypes.11"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G6" enclosingStep="//@partialGrafcets.1/@steps.5">
+    <steps xsi:type="grafcet:Step" id="601"/>
+    <steps xsi:type="grafcet:Step" id="602" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="603"/>
+    <transitions id="601">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.64/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.64"/>
+    </transitions>
+    <transitions id="602">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.61/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.61"/>
+    </transitions>
+    <transitions id="603">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.65/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.65"/>
+    </transitions>
+    <arcs source="//@partialGrafcets.6/@steps.0" target="//@partialGrafcets.6/@transitions.0"/>
+    <arcs source="//@partialGrafcets.6/@transitions.0" target="//@partialGrafcets.6/@steps.1"/>
+    <arcs source="//@partialGrafcets.6/@steps.1" target="//@partialGrafcets.6/@transitions.1"/>
+    <arcs source="//@partialGrafcets.6/@transitions.1" target="//@partialGrafcets.6/@steps.2"/>
+    <arcs source="//@partialGrafcets.6/@steps.2" target="//@partialGrafcets.6/@transitions.2"/>
+    <arcs source="//@partialGrafcets.6/@transitions.2" target="//@partialGrafcets.6/@steps.0"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="61">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.14/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.14"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="62">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.66/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.66"/>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.6/@steps.0" actionType="//@partialGrafcets.6/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.6/@steps.2" actionType="//@partialGrafcets.6/@actionTypes.1"/>
+  </partialGrafcets>
+  <partialGrafcets xsi:type="grafcet:PartialGrafcet" name="G7" enclosingStep="//@partialGrafcets.1/@steps.6">
+    <steps xsi:type="grafcet:Step" id="701"/>
+    <steps xsi:type="grafcet:Step" id="702" activationLink="true"/>
+    <steps xsi:type="grafcet:Step" id="703"/>
+    <steps xsi:type="grafcet:Step" id="704"/>
+    <steps xsi:type="grafcet:Step" id="705"/>
+    <steps xsi:type="grafcet:Step" id="706"/>
+    <steps xsi:type="grafcet:Step" id="707"/>
+    <steps xsi:type="grafcet:Step" id="708"/>
+    <steps xsi:type="grafcet:Step" id="709"/>
+    <steps xsi:type="grafcet:Step" id="710"/>
+    <steps xsi:type="grafcet:Step" id="711"/>
+    <transitions id="701">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.67/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.67"/>
+    </transitions>
+    <transitions id="702">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.70/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.70"/>
+    </transitions>
+    <transitions id="703">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.72/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.72"/>
+    </transitions>
+    <transitions id="704">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.7/@transitions.3/@term/@output" id="41" input="//@variableDeclarationContainer/@variableDeclarations.71/@sort //@variableDeclarationContainer/@variableDeclarations.61/@sort">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.71/@sort" id="412" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.71"/>
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.61/@sort" id="413" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.61"/>
+        <output xsi:type="terms:Bool" id="411"/>
+      </term>
+    </transitions>
+    <transitions id="705">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.68/@sort" id="51" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.68"/>
+    </transitions>
+    <transitions id="706">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.70/@sort" id="61" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.70"/>
+    </transitions>
+    <transitions id="707">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.73/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.73"/>
+    </transitions>
+    <transitions id="708">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.71/@sort" id="81" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.71"/>
+    </transitions>
+    <transitions id="709">
+      <term xsi:type="terms:And" sort="//@partialGrafcets.7/@transitions.8/@term/@output" id="91" input="//@variableDeclarationContainer/@variableDeclarations.71/@sort //@partialGrafcets.7/@transitions.8/@term/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.71/@sort" id="912" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.71"/>
+        <subterm xsi:type="terms:Not" sort="//@partialGrafcets.7/@transitions.8/@term/@subterm.1/@output" id="913" input="//@variableDeclarationContainer/@variableDeclarations.61/@sort">
+          <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.61/@sort" id="9132" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.61"/>
+          <output xsi:type="terms:Bool" id="9131"/>
+        </subterm>
+        <output xsi:type="terms:Bool" id="911"/>
+      </term>
+    </transitions>
+    <transitions id="710">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.69/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.69"/>
+    </transitions>
+    <transitions id="711">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.73/@sort" id="111" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.73"/>
+    </transitions>
+    <transitions id="712">
+      <term xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.68/@sort" id="121" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.68"/>
+    </transitions>
+    <arcs source="//@partialGrafcets.7/@steps.0" target="//@partialGrafcets.7/@transitions.0"/>
+    <arcs source="//@partialGrafcets.7/@transitions.0" target="//@partialGrafcets.7/@steps.1"/>
+    <arcs source="//@partialGrafcets.7/@steps.1" target="//@partialGrafcets.7/@transitions.1"/>
+    <arcs source="//@partialGrafcets.7/@transitions.1" target="//@partialGrafcets.7/@steps.2"/>
+    <arcs source="//@partialGrafcets.7/@steps.2" target="//@partialGrafcets.7/@transitions.2"/>
+    <arcs source="//@partialGrafcets.7/@transitions.2" target="//@partialGrafcets.7/@steps.3"/>
+    <arcs source="//@partialGrafcets.7/@steps.3" target="//@partialGrafcets.7/@transitions.3"/>
+    <arcs source="//@partialGrafcets.7/@transitions.3" target="//@partialGrafcets.7/@steps.4"/>
+    <arcs source="//@partialGrafcets.7/@steps.4" target="//@partialGrafcets.7/@transitions.4"/>
+    <arcs source="//@partialGrafcets.7/@transitions.4" target="//@partialGrafcets.7/@steps.5"/>
+    <arcs source="//@partialGrafcets.7/@steps.5" target="//@partialGrafcets.7/@transitions.5"/>
+    <arcs source="//@partialGrafcets.7/@transitions.5" target="//@partialGrafcets.7/@steps.6"/>
+    <arcs source="//@partialGrafcets.7/@steps.6" target="//@partialGrafcets.7/@transitions.6"/>
+    <arcs source="//@partialGrafcets.7/@transitions.6" target="//@partialGrafcets.7/@steps.7"/>
+    <arcs source="//@partialGrafcets.7/@steps.7" target="//@partialGrafcets.7/@transitions.7"/>
+    <arcs source="//@partialGrafcets.7/@transitions.7" target="//@partialGrafcets.7/@steps.0"/>
+    <arcs source="//@partialGrafcets.7/@steps.3" target="//@partialGrafcets.7/@transitions.8"/>
+    <arcs source="//@partialGrafcets.7/@transitions.8" target="//@partialGrafcets.7/@steps.8"/>
+    <arcs source="//@partialGrafcets.7/@steps.8" target="//@partialGrafcets.7/@transitions.9"/>
+    <arcs source="//@partialGrafcets.7/@transitions.9" target="//@partialGrafcets.7/@steps.9"/>
+    <arcs source="//@partialGrafcets.7/@steps.9" target="//@partialGrafcets.7/@transitions.10"/>
+    <arcs source="//@partialGrafcets.7/@transitions.10" target="//@partialGrafcets.7/@steps.10"/>
+    <arcs source="//@partialGrafcets.7/@steps.10" target="//@partialGrafcets.7/@transitions.11"/>
+    <arcs source="//@partialGrafcets.7/@transitions.11" target="//@partialGrafcets.7/@steps.0"/>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="701">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.15/@sort" id="11" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.15"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="702">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.74/@sort" id="21" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.74"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="703">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.75/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.75"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.2/@value/@output" id="32" value="true">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="704">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.75/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.75"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.3/@value/@output" id="32">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="705">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.75/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.75"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.4/@value/@output" id="32" value="true">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="706">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.75/@sort" id="31" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.75"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.5/@value/@output" id="32">
+        <output xsi:type="terms:Bool" id="321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="707">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.76/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.76"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.6/@value/@output" id="72" value="true">
+        <output xsi:type="terms:Bool" id="721"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="708">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.76/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.76"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.7/@value/@output" id="72">
+        <output xsi:type="terms:Bool" id="721"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="709">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.76/@sort" id="71" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.76"/>
+      <value xsi:type="terms:BooleanConstant" sort="//@partialGrafcets.7/@actionTypes.8/@value/@output" id="72">
+        <output xsi:type="terms:Bool" id="721"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="710">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.77/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.77"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="711">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.77/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.77"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:ContinuousAction" id="712">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.77/@sort" id="101" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.77"/>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="713">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.78/@sort" id="131" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.78"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.7/@actionTypes.12/@value/@output" id="132" input="//@variableDeclarationContainer/@variableDeclarations.78/@sort //@partialGrafcets.7/@actionTypes.12/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.78/@sort" id="1322" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.78"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.7/@actionTypes.12/@value/@subterm.1/@output" id="1323" value="1">
+          <output xsi:type="terms:Integer" id="13231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="1321"/>
+      </value>
+    </actionTypes>
+    <actionTypes xsi:type="grafcet:StoredAction" id="714">
+      <variable sort="//@variableDeclarationContainer/@variableDeclarations.79/@sort" id="141" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.79"/>
+      <value xsi:type="terms:Addition" sort="//@partialGrafcets.7/@actionTypes.13/@value/@output" id="142" input="//@variableDeclarationContainer/@variableDeclarations.79/@sort //@partialGrafcets.7/@actionTypes.13/@value/@subterm.1/@output">
+        <subterm xsi:type="terms:Variable" sort="//@variableDeclarationContainer/@variableDeclarations.79/@sort" id="1422" variableDeclaration="//@variableDeclarationContainer/@variableDeclarations.79"/>
+        <subterm xsi:type="terms:IntegerConstant" sort="//@partialGrafcets.7/@actionTypes.13/@value/@subterm.1/@output" id="1423">
+          <output xsi:type="terms:Integer" id="14231"/>
+        </subterm>
+        <output xsi:type="terms:Integer" id="1421"/>
+      </value>
+    </actionTypes>
+    <actionLinks step="//@partialGrafcets.7/@steps.0" actionType="//@partialGrafcets.7/@actionTypes.0"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.0" actionType="//@partialGrafcets.7/@actionTypes.1"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.1" actionType="//@partialGrafcets.7/@actionTypes.2"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.2" actionType="//@partialGrafcets.7/@actionTypes.6"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.3" actionType="//@partialGrafcets.7/@actionTypes.3"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.4" actionType="//@partialGrafcets.7/@actionTypes.9"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.5" actionType="//@partialGrafcets.7/@actionTypes.4"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.6" actionType="//@partialGrafcets.7/@actionTypes.7"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.7" actionType="//@partialGrafcets.7/@actionTypes.5"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.7" actionType="//@partialGrafcets.7/@actionTypes.12"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.10" actionType="//@partialGrafcets.7/@actionTypes.11"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.10" actionType="//@partialGrafcets.7/@actionTypes.13"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.9" actionType="//@partialGrafcets.7/@actionTypes.8"/>
+    <actionLinks step="//@partialGrafcets.7/@steps.8" actionType="//@partialGrafcets.7/@actionTypes.10"/>
+  </partialGrafcets>
+</grafcet:Grafcet>
