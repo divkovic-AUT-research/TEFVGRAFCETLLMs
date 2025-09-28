@@ -18,7 +18,3 @@ Station 6;StampBack6;StampFront6;Stamp cannot be in rear and front positions sim
 Station 7;LinearBack7;LinearFront7;Linear unit cannot be in rear and front positions simultaneously.
 Station 7;HandlingUp7;HandlingDown7;Gripper cannot be in upper and lower positions simultaneously.
 Station 7;ClampOpen7;ClampClosed7;Gripper clamp cannot be open and closed simultaneously.
-;;;
-;;;
-;;;
-;;claude 4;

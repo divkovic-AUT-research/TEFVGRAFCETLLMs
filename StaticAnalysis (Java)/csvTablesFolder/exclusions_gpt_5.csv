@@ -19,5 +19,3 @@ Station 7;LinearBack7;LinearFront7;Linear unit cannot be in rear and front posit
 Station 7;HandlingUp7;HandlingDown7;Gripper cannot be in upper and lower positions at the same time.
 Station 7;ClampOpen7;ClampClosed7;Clamp cannot be open and closed simultaneously.
 Station 7;LinearUnitForward7;LinearUnitBack7;"Opposite motion commands; cannot be active simultaneously."
-;;;
-;;;Gpt 5

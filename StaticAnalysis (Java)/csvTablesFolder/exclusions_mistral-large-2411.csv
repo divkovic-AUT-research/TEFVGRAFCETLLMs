@@ -18,6 +18,3 @@ Station 6;StampBack6;StampFront6;Stamp cannot be in rear and front position simu
 Station 7;LinearBack7;LinearFront7;Linear unit cannot be in rear and front position simultaneously.
 Station 7;HandlingUp7;HandlingDown7;Gripper cannot be in upper and lower position simultaneously.
 Station 7;ClampOpen7;ClampClosed7;Gripper clamp cannot be open and closed simultaneously.
-;;;
-;;;
-;Mistral 2411;;
