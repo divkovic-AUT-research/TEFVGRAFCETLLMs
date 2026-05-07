@@ -1,0 +1,5 @@
+<results:Results>
+	<Exclusion transition="//@partialGrafcets.0/@transitions.1" ExcludesTransitions= "[16]" />
+	<Exclusion transition="//@partialGrafcets.0/@transitions.3" ExcludesTransitions= "[16]" />
+	<Exclusion transition="//@partialGrafcets.0/@transitions.16" ExcludesTransitions= "[1, 3]" />
+</results:Results>
