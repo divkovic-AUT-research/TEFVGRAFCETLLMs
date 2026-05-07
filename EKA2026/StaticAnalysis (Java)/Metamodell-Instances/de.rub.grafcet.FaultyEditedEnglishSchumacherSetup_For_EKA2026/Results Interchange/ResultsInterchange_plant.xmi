@@ -1,0 +1,8 @@
+<results:Results>
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.16-hasReferencingVariableInPartialGrafcet.(G7)" Variable="[Station7_fertig]" />
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.14-hasReferencingVariableInPartialGrafcet.(G5)" Variable="[Station5_fertig]" />
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.15-hasReferencingVariableInPartialGrafcet.(G6)" Variable="[Station6_fertig]" />
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.12-hasReferencingVariableInPartialGrafcet.(G2)" Variable="[Station2_fertig]" />
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.13-hasReferencingVariableInPartialGrafcet.(G3)" Variable="[Station3_fertig]" />
+	<detectedEnclosingStepTransitionSelfReferences="//@partialGrafcets.1/@StepId.11-hasReferencingVariableInPartialGrafcet.(G1)" Variable="[Station1_fertig]" />
+</results:Results>
