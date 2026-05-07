@@ -1,1 +1,1 @@
-# ONCON 2025 Publication: Towards Efficient Formal Verification of GRAFCET Specifications using LLMs
+# EKA 2026 AND ONCON 2025 Publication
