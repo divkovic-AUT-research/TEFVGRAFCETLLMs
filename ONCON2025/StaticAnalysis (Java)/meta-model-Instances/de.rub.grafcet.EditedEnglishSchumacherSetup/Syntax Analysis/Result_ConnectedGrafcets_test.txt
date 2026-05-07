@@ -1,0 +1,5 @@
+
+
+Result of check for connected Grafcets for GRAFCET-File test:
+
+The following connected Grafcet(s) is (are) not initializable: 

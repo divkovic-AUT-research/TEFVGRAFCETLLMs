@@ -1,0 +1,5 @@
+
+
+Result of partial order check:
+Partial order of Grafcet contains no cycles. 
+Partial order of Grafcet: [([GRAFCETChart<1>], [])]
